@@ -1,156 +1,77 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CodeNova - Votre code, notre mission</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Montserrat', sans-serif;
-    }
-    body {
-      background-color: #0f1e30;
-      color: #fff;
-      line-height: 1.6;
-    }
-    header {
-      background: #0f1e30;
-      padding: 20px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 2px solid #f7931e;
-    }
-    nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      color: #fff;
-      transition: color 0.3s;
-    }
-    nav a:hover {
-      color: #f7931e;
-    }
-    .hero {
-      text-align: center;
-      padding: 60px 20px;
-    }
-    .hero h1 {
-      font-size: 2.5rem;
-      color: #fff;
-    }
-    .hero p {
-      font-size: 1.2rem;
-      margin-top: 10px;
-      color: #ccc;
-    }
-    .cta-button {
-      background: #2fbecd;
-      color: white;
-      padding: 12px 24px;
-      margin-top: 20px;
-      font-size: 1rem;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-    .cta-button:hover {
-      background: #259ca8;
-    }
-    section {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-    h2 {
-      font-size: 1.8rem;
-      color: #f7931e;
-      margin-bottom: 20px;
-    }
-    ul {
-      list-style: none;
-    }
-    ul li::before {
-      content: '✔';
-      margin-right: 10px;
-      color: #2fbecd;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background: #0a1520;
-      font-size: 0.9rem;
-      color: #aaa;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeNova</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div><strong style="font-size: 1.3rem; color: #f7931e;">CodeNova</strong></div>
-    <nav>
-      <a href="#services">Services</a>
-      <a href="#tarifs">Tarifs</a>
-      <a href="#apropos">À propos</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+    <header>
+        <img src="logo.png" alt="Logo CodeNova" class="logo">
+        <h1>CodeNova – La solution numérique à vos problèmes informatiques !</h1>
+        <nav>
+            <a href="#accueil">Accueil</a>
+            <a href="#personnel">Personnel</a>
+            <a href="#objectif">Objectif</a>
+            <a href="#rdv">Rendez-vous</a>
+            <a href="#problemes">Problèmes</a>
+            <a href="#finances">Finances</a>
+        </nav>
+    </header>
 
-  <section class="hero">
-    <h1>Votre partenaire pour des solutions logicielles efficaces et sur mesure.</h1>
-    <p>Développement Web | Automatisation | Maintenance & Sécurité | Conseil IT</p>
-    <button class="cta-button">Prenez rendez-vous gratuitement</button>
-    <div style="margin-top: 20px;">
-      <a href="mailto:codenova1203@gmail.com" class="cta-button">Envoyer un e-mail</a>
-      <a href="sms:0610463851" class="cta-button" style="margin-left: 10px;">Envoyer un SMS</a>
-    </div>
+    <section id="accueil">
+        <h2>Bienvenue sur CodeNova</h2>
+        <p>Bonjour et bienvenue sur CodeNova, votre partenaire pour toutes vos solutions informatiques.</p>
+        <button onclick="window.location='mailto:codenova.1203@gmail.com'">Nous contacter par Email</button>
+        <button onclick="window.location='sms:+33610463851'">Envoyer un SMS</button>
+    </section>
 
-  </section>
+    <section id="personnel">
+        <h2>Personnel</h2>
+        <table>
+            <tr><th>Poste</th><th>Nom</th><th>Téléphone</th><th>Email</th></tr>
+            <tr><td>Manager Chef</td><td>FOUL Samy</td><td>0610463851</td><td>codenova.1203@gmail.com</td></tr>
+            <tr><td>Sous-Manager</td><td>Abderahman Baghdaddi</td><td>0753641332</td><td>codenova.1203@gmail.com</td></tr>
+        </table>
+    </section>
 
-  <section id="services">
-    <h2>Services proposés</h2>
-    <ul>
-      <li>Développement d’applications sur mesure</li>
-      <li>Sites web performants et responsive</li>
-      <li>Automatisation de tâches (scripts, bots, etc.)</li>
-      <li>Conseil et optimisation IT</li>
-      <li>Maintenance & cybersécurité de base</li>
-    </ul>
-  </section>
+    <section id="objectif">
+        <h2>Objectif</h2>
+        <p>Résoudre tout type de problème informatique : bugs logiciels, pannes matérielles, développement web ou mobile, installation de système, et accompagnement numérique pour les particuliers et les entreprises.</p>
+    </section>
 
-  <section id="tarifs">
-    <h2>Business Model</h2>
-    <ul>
-      <li>Forfaits mensuels (abonnement)</li>
-      <li>Paiement par projet</li>
-      <li>Maintenance & support à la carte</li>
-    </ul>
-  </section>
+    <section id="rdv">
+        <h2>Prise de Rendez-vous</h2>
+        <button onclick="window.location='mailto:codenova.1203@gmail.com?subject=Demande de rendez-vous'">📧 Par Email</button>
+        <button onclick="window.location='sms:+33610463851'">📱 Par SMS</button>
+    </section>
 
-  <section id="apropos">
-    <h2>À propos de CodeNova</h2>
-    <p>Startup tech spécialisée dans les solutions logicielles personnalisées pour TPE/PME. Notre mission : accompagner les entreprises dans leur transformation digitale grâce à des outils efficaces, modernes et adaptés.</p>
-  </section>
+    <section id="problemes">
+        <h2>Problèmes</h2>
+        <form>
+            <label><input type="checkbox"> Problème de connexion internet</label>
+            <label><input type="checkbox"> Ordinateur lent</label>
+            <label><input type="checkbox"> Virus ou malware</label>
+            <label><input type="checkbox"> Écran cassé</label>
+            <label><input type="checkbox"> Clavier défectueux</label>
+            <label><input type="checkbox"> Installation de logiciel</label>
+            <label><input type="checkbox"> Mise à jour système</label>
+            <label><input type="checkbox"> Création de site web</label>
+            <label><input type="checkbox"> Récupération de données</label>
+            <label><input type="checkbox"> Autre</label>
+        </form>
+    </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Gérant : Samy Foul</p>
-    <p>Email : codenova1203@gmail.com</p>
-    <p>Téléphone : 06 10 46 38 51</p>
-  </section>
-  <section id="equipe">
-    <h2>Employés</h2>
-    <p>Abderahman Baghdaddi</p>
-  </section>
-
-
-  <footer>
-    © 2025 CodeNova. Tous droits réservés.
-  </footer>
+    <section id="finances">
+        <h2>Finances</h2>
+        <table>
+            <tr><td>Salaire des employés</td><td>1200 €</td></tr>
+            <tr><td>Bénéfices de l'entreprise</td><td>2600 €</td></tr>
+        </table>
+        <label>Entrer une nouvelle somme reçue :</label>
+        <input type="number" placeholder="Montant en €">
+    </section>
 </body>
 </html>
