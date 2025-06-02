@@ -1,0 +1,127 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeNova</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header {
+            background-color: #24292e;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 15px;
+            color: white;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        .logo {
+            max-height: 60px;
+            vertical-align: middle;
+        }
+        button {
+            margin: 5px;
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo CodeNova" class="logo">
+        <h1>Bonjour et bienvenue sur CodeNova</h1>
+        <p><em>Votre code, notre mission.</em></p>
+        <nav>
+            <a href="#personnel">Personnel</a>
+            <a href="#objectif">Objectif</a>
+            <a href="#rdv">Rendez-vous</a>
+            <a href="#problemes">Problèmes</a>
+            <a href="#finances">Finances</a>
+        </nav>
+    </header>
+
+    <section id="personnel">
+        <h2>Personnel</h2>
+        <table>
+            <tr><th>Poste</th><th>Nom</th><th>Téléphone</th><th>Email</th></tr>
+            <tr><td>Manager Chef</td><td>FOUL Samy</td><td>0610463851</td><td>codenova.1203@gmail.com</td></tr>
+            <tr><td>Sous-Manager</td><td>Abderahman Baghdaddi</td><td>0753641332</td><td>codenova.1203@gmail.com</td></tr>
+        </table>
+    </section>
+
+    <section id="objectif">
+        <h2>Objectif</h2>
+        <p>Notre mission est de résoudre tout type de problème informatique : développement web, bugs logiciels, sécurité, optimisation, accompagnement digital. Nous aidons les petites entreprises à se digitaliser efficacement.</p>
+    </section>
+
+    <section id="rdv">
+        <h2>Prise de Rendez-vous</h2>
+        <p>Choisissez comment vous souhaitez nous contacter :</p>
+        <button onclick="window.location='mailto:codenova.1203@gmail.com?subject=Prise de rendez-vous'">📧 Email</button>
+        <button onclick="window.location='sms:+33610463851'">📱 SMS</button>
+    </section>
+
+    <section id="problemes">
+        <h2>Choisissez un Problème</h2>
+        <form>
+            <label><input type="checkbox"> Problème de connexion internet</label><br>
+            <label><input type="checkbox"> Ordinateur lent</label><br>
+            <label><input type="checkbox"> Virus ou malware</label><br>
+            <label><input type="checkbox"> Écran cassé</label><br>
+            <label><input type="checkbox"> Clavier défectueux</label><br>
+            <label><input type="checkbox"> Installation de logiciel</label><br>
+            <label><input type="checkbox"> Mise à jour système</label><br>
+            <label><input type="checkbox"> Création de site web</label><br>
+            <label><input type="checkbox"> Récupération de données</label><br>
+            <label><input type="checkbox"> Autre problème technique</label><br>
+        </form>
+    </section>
+
+    <section id="finances">
+        <h2>Finances</h2>
+        <table>
+            <tr><td>Salaire des employés</td><td>1200 €</td></tr>
+            <tr><td>Bénéfice net</td><td>2600 €</td></tr>
+        </table>
+        <label>Entrer un revenu :</label>
+        <input type="number" placeholder="Montant en €">
+    </section>
+</body>
+</html>
