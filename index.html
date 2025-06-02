@@ -5,7 +5,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CodeNova</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #24292e;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        .logo {
+            max-height: 60px;
+            vertical-align: middle;
+        }
+        button {
+            margin: 5px;
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -51,15 +107,15 @@
     <section id="problemes">
         <h2>Problèmes</h2>
         <form>
-            <label><input type="checkbox"> Problème de connexion internet</label>
-            <label><input type="checkbox"> Ordinateur lent</label>
-            <label><input type="checkbox"> Virus ou malware</label>
-            <label><input type="checkbox"> Écran cassé</label>
-            <label><input type="checkbox"> Clavier défectueux</label>
-            <label><input type="checkbox"> Installation de logiciel</label>
-            <label><input type="checkbox"> Mise à jour système</label>
-            <label><input type="checkbox"> Création de site web</label>
-            <label><input type="checkbox"> Récupération de données</label>
+            <label><input type="checkbox"> Problème de connexion internet</label><br>
+            <label><input type="checkbox"> Ordinateur lent</label><br>
+            <label><input type="checkbox"> Virus ou malware</label><br>
+            <label><input type="checkbox"> Écran cassé</label><br>
+            <label><input type="checkbox"> Clavier défectueux</label><br>
+            <label><input type="checkbox"> Installation de logiciel</label><br>
+            <label><input type="checkbox"> Mise à jour système</label><br>
+            <label><input type="checkbox"> Création de site web</label><br>
+            <label><input type="checkbox"> Récupération de données</label><br>
             <label><input type="checkbox"> Autre</label>
         </form>
     </section>
